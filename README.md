@@ -10,7 +10,7 @@ An Mongodb datasource for CakePHP 3.5
 Install [composer](http://getcomposer.org) and run:
 
 ```bash
-composer require hayko/mongodb dev-master
+composer require mofing/mongodb 
 ```
 
 ## Connecting the Plugin to your application
@@ -18,7 +18,7 @@ composer require hayko/mongodb dev-master
 add the following line in your config/bootstrap.php to tell your application to load the plugin:
 
 ```php
-Plugin::load('Hayko/Mongodb');
+Plugin::load('Mofing/Mongodb');
 
 ```
 
@@ -28,8 +28,8 @@ Now, you need to set the connection in your config/app.php file:
 ```php
  'Datasources' => [
     'default' => [
-        'className' => 'Hayko\Mongodb\Database\Connection',
-        'driver' => 'Hayko\Mongodb\Database\Driver\Mongodb',
+        'className' => 'Mofing\Mongodb\Database\Connection',
+        'driver' => 'Mofing\Mongodb\Database\Driver\Mongodb',
         'persistent' => false,
         'host' => 'localhost',
         'port' => 27017,
@@ -56,7 +56,7 @@ After that, you need to load Hayko\Mongodb\ORM\Table in your tables class:
 ```php
 //src/Model/Table/YourTable.php
 
-use Hayko\Mongodb\ORM\Table;
+use Mofing\Mongodb\ORM\Table;
 
 class CategoriesTable extends Table {
 
