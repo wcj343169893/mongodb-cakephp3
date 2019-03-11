@@ -4,6 +4,7 @@
 	"type" : "cakephp-plugin",
 	"require" : {
 		"php" : "^5.4|^7.0",
+		"mongodb/mongodb": "^1.2",
 		"cakephp/cakephp" : "^3.5"
 	},
 	"require-dev" : {
