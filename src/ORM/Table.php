@@ -213,11 +213,11 @@ class Table extends CakeTable
         /** @var ChronosInterface $c */
         if (isset($data['created'])) {
             $c = $data['created'];
-            $data['created']  = new \MongoDB\BSON\UTCDateTime(strtotime($c->toDateTimeString()));
+            $data['created']  = new \MongoDB\BSON\UTCDateTime(strtotime($c->toDateTimeString())*1000);
         }
         if (isset($data['modified'])) {
             $c = $data['modified'];
-            $data['modified'] = new \MongoDB\BSON\UTCDateTime(strtotime($c->toDateTimeString()));
+            $data['modified'] = new \MongoDB\BSON\UTCDateTime(strtotime($c->toDateTimeString())*1000);
         }
 
         if ($isNew) {
