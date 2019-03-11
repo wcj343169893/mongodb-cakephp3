@@ -1,27 +1,24 @@
 {
-    "name": "hayko/mongodb",
-    "description": "An Mongodb datasource for CakePHP 3.0",
-    "type": "cakephp-plugin",
-    "require": {
-        "php": "^5.4|^7.0",
-        "ext-mongodb": "^1.3",
-        "cakephp/cakephp": "^3.5",
-        "mongodb/mongodb": "^1.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.0"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "tiaguinho",
-            "email": "tiaguinhocab@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Hayko\\Mongodb\\": "src",
-            "Hayko\\Mongodb\\Test\\": "tests"
-        }
-    }
+	"name" : "mofing/mongodb",
+	"description" : "An Mongodb datasource for CakePHP 3.0",
+	"type" : "cakephp-plugin",
+	"require" : {
+		"php" : "^5.4|^7.0",
+		"cakephp/cakephp" : "^3.5"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^6.0"
+	},
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "tiaguinho",
+			"email" : "tiaguinhocab@gmail.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Mofing\\Mongodb\\" : "src",
+			"Mofing\\Mongodb\\Test\\" : "tests"
+		}
+	}
 }

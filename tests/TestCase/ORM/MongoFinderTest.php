@@ -1,20 +1,20 @@
 <?php
 
-namespace Hayko\Mongodb\Test\TestCase\ORM;
+namespace Mofing\Mongodb\Test\TestCase\ORM;
 
 use Cake\Cache\Cache;
 use Cake\Datasource\ConnectionManager;
 use Cake\ORM\Entity;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
-use Hayko\Mongodb\ORM\Table;
+use Mofing\Mongodb\ORM\Table;
 
 class MongoTestsTable extends Table
 {
     public function initialize(array $config)
     {
         $this->setTable('tests');
-        $this->setEntityClass('Hayko\Mongodb\Test\TestCase\ORM\MongoTest');
+        $this->setEntityClass('Mofing\Mongodb\Test\TestCase\ORM\MongoTest');
         $this->setConnection(ConnectionManager::get('mongodb_test', false));
         parent::initialize($config);
     }
@@ -34,7 +34,7 @@ class MongoFinderTest extends TestCase
     {
         parent::setUp();
         Cache::disable();
-        $this->table = TableRegistry::get('MongoTests', ['className' => 'Hayko\Mongodb\Test\TestCase\ORM\MongoTestsTable']);
+        $this->table = TableRegistry::get('MongoTests', ['className' => 'Mofing\Mongodb\Test\TestCase\ORM\MongoTestsTable']);
     }
 
     public function tearDown()

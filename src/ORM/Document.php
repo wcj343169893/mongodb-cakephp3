@@ -1,6 +1,6 @@
 <?php
 
-namespace Hayko\Mongodb\ORM;
+namespace Mofing\Mongodb\ORM;
 
 use Cake\ORM\Entity;
 use Exception;

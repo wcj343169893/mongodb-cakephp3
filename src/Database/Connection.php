@@ -1,10 +1,10 @@
 <?php
 
-namespace Hayko\Mongodb\Database;
+namespace Mofing\Mongodb\Database;
 
 use Cake\Database\Exception\MissingConnectionException;
-use Hayko\Mongodb\Database\Driver\Mongodb as Haykodb;
-use Hayko\Mongodb\Database\Schema\MongoSchema;
+use Mofing\Mongodb\Database\Driver\Mongodb as Mofingdb;
+use Mofing\Mongodb\Database\Schema\MongoSchema;
 
 class Connection extends \Cake\Database\Connection
 {
@@ -19,7 +19,7 @@ class Connection extends \Cake\Database\Connection
     /**
      * Database Driver object
      *
-     * @var \Hayko\Mongodb\Database\Driver\Mongodb;
+     * @var \Mofing\Mongodb\Database\Driver\Mongodb;
      */
     protected $_driver = null;
 
@@ -70,14 +70,14 @@ class Connection extends \Cake\Database\Connection
     /**
      * @param null $driver
      * @param array $config
-     * @return Haykodb|resource
+     * @return Mofingdb|resource
      */
     public function driver($driver = null, $config = [])
     {
         if ($driver === null) {
             return $this->_driver;
         }
-        $this->_driver = new Haykodb($config);
+        $this->_driver = new Mofingdb($config);
 
         return $this->_driver;
     }

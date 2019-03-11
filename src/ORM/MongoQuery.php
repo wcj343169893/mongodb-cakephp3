@@ -1,6 +1,6 @@
 <?php
 
-namespace Hayko\Mongodb\ORM;
+namespace Mofing\Mongodb\ORM;
 
 class MongoQuery
 {
